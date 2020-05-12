@@ -73,6 +73,9 @@ li {
                     margin: 10px;
                     padding: 10px;
                     border-radius: 6px;
+                    .fas {
+                        margin-right: 10px;
+                    }
                     &:hover {
                         background-color: powderblue;
                         transition: .5s;
