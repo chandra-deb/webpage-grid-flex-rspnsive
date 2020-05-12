@@ -1,0 +1,116 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.nav-wrapper {
+  -webkit-box-shadow: -1px 7px 18px -4px rgba(0, 0, 0, 0.75);
+          box-shadow: -1px 7px 18px -4px rgba(0, 0, 0, 0.75);
+  display: fixed;
+}
+
+.nav-wrapper nav {
+  max-width: 1366px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-wrapper nav .left-nav {
+  margin-left: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: 190px;
+      flex-basis: 190px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-wrapper nav .middle-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+  -ms-flex-negative: auto;
+      flex-shrink: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-wrapper nav .middle-nav li a {
+  margin: 10px;
+  padding: 10px;
+}
+
+.nav-wrapper nav .middle-nav li a:hover {
+  border-bottom: 1px solid powderblue;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.nav-wrapper nav .right-nav {
+  margin-right: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+  -ms-flex-negative: auto;
+      flex-shrink: auto;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-wrapper nav .right-nav li a {
+  display: inline-block;
+  border: 2px solid powderblue;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.nav-wrapper nav .right-nav li a:hover {
+  background-color: powderblue;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+/*# sourceMappingURL=style.css.map */
