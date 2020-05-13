@@ -12,19 +12,22 @@ a {
   color: black;
 }
 
-ul {
-  padding: 0;
-  margin: 0;
-}
-
 li {
   list-style-type: none;
 }
 
+h1, h2, h3, h4, h5, h6, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
 .nav-wrapper {
+  width: 100%;
   -webkit-box-shadow: -1px 7px 18px -4px rgba(0, 0, 0, 0.75);
           box-shadow: -1px 7px 18px -4px rgba(0, 0, 0, 0.75);
-  display: fixed;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 .nav-wrapper nav {
@@ -75,9 +78,9 @@ li {
 }
 
 .nav-wrapper nav .middle-nav li a:hover {
-  border-bottom: 1px solid powderblue;
-  -webkit-transition: .5s;
-  transition: .5s;
+  border-bottom: 4px solid #02bfdb;
+  -webkit-transition: .1s;
+  transition: .1s;
 }
 
 .nav-wrapper nav .right-nav {
@@ -102,7 +105,7 @@ li {
 
 .nav-wrapper nav .right-nav li a {
   display: inline-block;
-  border: 2px solid powderblue;
+  border: 3px solid #02bfdb;
   margin: 10px;
   padding: 10px;
   border-radius: 6px;
@@ -113,8 +116,82 @@ li {
 }
 
 .nav-wrapper nav .right-nav li a:hover {
-  background-color: powderblue;
-  -webkit-transition: .5s;
-  transition: .5s;
+  background-color: #02bfdb;
+  color: white;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.top-content {
+  background: #d1d1d1;
+  text-align: center;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.top-content h1 {
+  margin-top: 1rem;
+  font-size: 4rem;
+}
+
+.top-content h4 {
+  margin-top: 1.5rem;
+  font-size: 24px;
+}
+
+.top-content .input-form {
+  max-width: 70rem;
+  margin: auto;
+  margin-top: 4rem;
+  border: 10px solid rgba(2, 191, 219, 0.2);
+  border-radius: 4px;
+}
+
+.top-content .input-form .flex-form {
+  padding: 0 0px;
+  background: white;
+  border-radius: 4px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.top-content .input-form .flex-form > * {
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
+}
+
+.top-content .input-form .flex-form > input, .top-content .input-form select {
+  height: 35px;
+  border-radius: 4px;
+  border-top: 2px solid #02bfdb;
+  border-bottom: 2px solid #02bfdb;
+  border-left: none;
+  border-right: none;
+}
+
+.top-content .input-form .flex-form > label {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.top-content .input-form .flex-form > label i {
+  background-color: #02bfdb;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.top-content .input-form .flex-form > #diff-sn {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 /*# sourceMappingURL=style.css.map */

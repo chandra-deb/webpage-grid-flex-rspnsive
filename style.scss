@@ -11,21 +11,24 @@ a {
     color: black;
 }
 
-ul {
-    padding: 0;
-    margin: 0;
-}
 
 li {
     list-style-type: none;
 }
 
+h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
 
 
 
 .nav-wrapper {
+    width: 100%;
     box-shadow: -1px 7px 18px -4px rgba(0,0,0,0.75);
-    display: fixed;
+    position: sticky;
+    top: 0;
+
 
     nav {
         max-width: 1366px;
@@ -52,8 +55,8 @@ li {
                     margin: 10px;
                     padding: 10px;
                     &:hover {
-                        border-bottom: 1px solid powderblue;
-                        transition: .5s;
+                        border-bottom: 4px solid #02bfdb;
+                        transition: .1s;
                     }
                 }
             }
@@ -69,7 +72,7 @@ li {
             li {
                 a {
                     display: inline-block;
-                    border: 2px solid powderblue;
+                    border: 3px solid #02bfdb;
                     margin: 10px;
                     padding: 10px;
                     border-radius: 6px;
@@ -77,8 +80,9 @@ li {
                         margin-right: 10px;
                     }
                     &:hover {
-                        background-color: powderblue;
-                        transition: .5s;
+                        background-color: #02bfdb;
+                        color: white;
+                        transition: .3s;
                     }
                 }
 
@@ -86,3 +90,59 @@ li {
         }
     }
 }     
+
+.top-content {
+    background: #d1d1d1;
+    text-align: center;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    h1 {
+        margin-top: 1rem;
+        font-size: 4rem;
+    }
+    h4 {
+        margin-top: 1.5rem;
+        font-size: 24px;
+    }
+
+
+    // form start here
+    .input-form {
+        max-width: 70rem;
+        margin: auto;
+        margin-top: 4rem;
+        border: 10px solid rgba(2, 191, 219, .2);
+        border-radius: 4px;
+
+        .flex-form {
+            padding: 0 0px;
+            background: white;
+            border-radius: 4px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        .flex-form > * {
+            flex: 5;
+        }
+        .flex-form > input, select{
+            height: 35px;
+            border-radius: 4px;
+            border-top: 2px solid #02bfdb;
+            border-bottom: 2px solid #02bfdb;
+            border-left: none;
+            border-right: none;
+        }
+        .flex-form > label {
+            flex: 1;
+            i {
+                background-color: #02bfdb;
+                border-radius: 4px;
+                padding: 10px
+            }
+        }
+        .flex-form > #diff-sn {
+            flex: 1;
+        }
+    }
+}
