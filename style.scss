@@ -171,11 +171,12 @@ h1, h2, h3, h4, h5, h6, p, ul {
         grid-gap: 2%;
         justify-content: center;
         grid-template-columns: repeat(auto-fit, minmax(400px, 410px));
-        border: 1px solid red;
         .parent {
-            border: 1px solid blue;
             box-shadow: 1px 10px 8px -7px rgba(0,0,0,0.59);
+            border: 1px solid #d2d2d2;
+            border-bottom: none;
             margin-top: 20px;
+            border-radius: 9px;
             .child {
                 h3 {
                     margin-top: 12px;
