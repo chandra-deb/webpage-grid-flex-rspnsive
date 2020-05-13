@@ -23,8 +23,8 @@ h1, h2, h3, h4, h5, h6, p, ul {
 
 
 
+
 .nav-wrapper {
-    width: 100%;
     box-shadow: -1px 7px 18px -4px rgba(0,0,0,0.75);
     position: sticky;
     top: 0;
@@ -143,6 +143,32 @@ h1, h2, h3, h4, h5, h6, p, ul {
         }
         .flex-form > #diff-sn {
             flex: 1;
+        }
+    }
+}
+
+
+// Browse categories starts here
+.b-c {
+    max-width: 1366px;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    h2 {
+        font-weight: 100;
+    }
+    .b-c-boxes {
+        display: grid;
+        grid-gap: 2%;
+        justify-content: center;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 410px));
+        border: 1px solid red;
+        .parent {
+            border: 1px solid blue;
+        }
+        img {
+            max-width: 100%;
         }
     }
 }
