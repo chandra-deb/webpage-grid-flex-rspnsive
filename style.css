@@ -197,6 +197,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
 .b-c {
   max-width: 1366px;
   margin: auto;
+  margin-top: 80px;
   padding-left: 15px;
   padding-right: 15px;
   text-align: center;
@@ -204,6 +205,13 @@ h1, h2, h3, h4, h5, h6, p, ul {
 
 .b-c h2 {
   font-weight: 100;
+  margin-bottom: 15px;
+}
+
+.b-c p {
+  margin: auto;
+  margin-bottom: 40px;
+  max-width: 90%;
 }
 
 .b-c .b-c-boxes {
@@ -220,6 +228,18 @@ h1, h2, h3, h4, h5, h6, p, ul {
 
 .b-c .b-c-boxes .parent {
   border: 1px solid blue;
+  -webkit-box-shadow: 1px 10px 8px -7px rgba(0, 0, 0, 0.59);
+          box-shadow: 1px 10px 8px -7px rgba(0, 0, 0, 0.59);
+  margin-top: 20px;
+}
+
+.b-c .b-c-boxes .parent .child h3 {
+  margin-top: 12px;
+}
+
+.b-c .b-c-boxes .parent .child p {
+  margin-top: 8px;
+  margin-bottom: 20px;
 }
 
 .b-c .b-c-boxes img {

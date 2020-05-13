@@ -152,12 +152,20 @@ h1, h2, h3, h4, h5, h6, p, ul {
 .b-c {
     max-width: 1366px;
     margin: auto;
+    margin-top: 80px;
     padding-left: 15px;
     padding-right: 15px;
     text-align: center;
     h2 {
         font-weight: 100;
+        margin-bottom: 15px;
     }
+    p {
+        margin: auto;
+        margin-bottom: 40px;
+        max-width: 90%;
+    }
+
     .b-c-boxes {
         display: grid;
         grid-gap: 2%;
@@ -166,6 +174,17 @@ h1, h2, h3, h4, h5, h6, p, ul {
         border: 1px solid red;
         .parent {
             border: 1px solid blue;
+            box-shadow: 1px 10px 8px -7px rgba(0,0,0,0.59);
+            margin-top: 20px;
+            .child {
+                h3 {
+                    margin-top: 12px;
+                }
+                p {
+                    margin-top: 8px;
+                    margin-bottom: 20px;
+                }
+            }
         }
         img {
             max-width: 100%;
