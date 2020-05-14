@@ -21,8 +21,36 @@ h1, h2, h3, h4, h5, h6, p, ul {
     padding: 0;
 }
 
+h2 {
+    font-weight: 100;
+    margin-bottom: 15px;
+}
+p {
+    margin: auto;
+    margin-bottom: 40px;
+    max-width: 90%;
+}
 
+// reuseable components
 
+.btn {
+    display: inline-block;
+    border: 3px solid #02bfdb;
+    margin: 10px;
+    margin-top: 60px;
+    padding: 8px;
+    border-radius: 6px;
+    .fas {
+        margin-right: 10px;
+    }
+    &:hover {
+        background-color: #02bfdb;
+        color: white;
+        transition: .3s;
+    }
+}
+
+// reuseable components ends
 
 .nav-wrapper {
     background: white;
@@ -156,21 +184,21 @@ h1, h2, h3, h4, h5, h6, p, ul {
     padding-left: 15px;
     padding-right: 15px;
     text-align: center;
-    h2 {
-        font-weight: 100;
-        margin-bottom: 15px;
-    }
-    p {
-        margin: auto;
-        margin-bottom: 40px;
-        max-width: 90%;
-    }
+    // h2 {
+    //     font-weight: 100;
+    //     margin-bottom: 15px;
+    // }
+    // p {
+    //     margin: auto;
+    //     margin-bottom: 40px;
+    //     max-width: 90%;
+    // }
 
     .b-c-boxes {
         display: grid;
         grid-gap: 2%;
         justify-content: center;
-        grid-template-columns: repeat(auto-fit, minmax(400px, 410px));
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
         .parent {
             box-shadow: 1px 10px 8px -7px rgba(0,0,0,0.59);
             border: 1px solid #d2d2d2;
@@ -189,6 +217,69 @@ h1, h2, h3, h4, h5, h6, p, ul {
         }
         img {
             max-width: 100%;
+        }
+    }
+}
+
+// .featured-listing {
+//     // max-width: 1366px;
+//     background: #fafafa;
+//     margin: auto;
+//     margin-top: 70px;
+//     padding-top: 70px;
+//     padding-left: 15px;
+//     padding-right: 15px;
+//     text-align: center;
+//     .featured-listing-boxes {
+//         display: flex;
+//         flex-wrap: wrap;
+//         justify-items: flex-end;
+//         .parent{
+//             border: 1px solid red;
+//             flex:1 1 300px;
+//             margin-bottom: 30px;
+//             margin-right: 5px;
+//             margin-left: 5px;
+//             .child {
+//                 text-align: left;
+//                 img {
+//                     max-width: 97%;
+//                     min-width: 360px;
+//                 }
+//                 h3, p {
+//                     margin: auto 15px;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+.featured-listing {
+    // max-width: 1366px;
+    background: #fafafa;
+    margin: auto;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    .featured-listing-boxes {
+        text-align: left;
+        display: grid;
+        grid-gap: 10px;
+        justify-content: center;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        .parent {
+            .child {
+                img {
+                    width: 100%;
+                }
+                h3, p {
+                    margin: auto 15px;
+                }
+            }
         }
     }
 }

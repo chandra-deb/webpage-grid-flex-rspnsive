@@ -1,117 +1,318 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <!-- Nav Start -->
-        <div class="nav-wrapper">
-            <nav>
-                <ul class="left-nav">
-                    <li><img src="http://chanu.themolihua.com/img/logo.png" alt=""></li>
-                </ul>
-                <ul class="middle-nav">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Listing</a></li>
-                    <li><a href="#">Categories</a></li>
-                    <li><a href="#">Pages</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">About</a></li>
-                </ul>
-                <ul class="right-nav">
-                    <li><a href="#"><i class="fas fa-plus-circle"></i>Submit List</a></li>
-                    <li><a href="#"><i class="fas fa-user"></i>Login</a></li>
-                </ul>
-            </nav>
+      <!-- Nav Start -->
+      <div class="nav-wrapper">
+        <nav>
+          <ul class="left-nav">
+            <li>
+              <img src="http://chanu.themolihua.com/img/logo.png" alt="" />
+            </li>
+          </ul>
+          <ul class="middle-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Listing</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+          <ul class="right-nav">
+            <li>
+              <a href="#" class="btn"
+                ><i class="fas fa-plus-circle"></i>Submit List</a
+              >
+            </li>
+            <li>
+              <a href="#" class="btn"><i class="fas fa-user"></i>Login</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- Nav End -->
+
+      <!-- top-content Start -->
+      <div class="top-content">
+        <img id="logo" src="http://chanu.themolihua.com/img/icon.png" alt="" />
+        <h1>BeDirectory</h1>
+        <h4>THE BEST WORDPRESS DIRECTORY THEME EVER</h4>
+        <div class="input-form">
+          <form action="#" class="flex-form">
+            <label for="keyword"><i class="fa fa-pen icon-t"></i></label>
+            <input
+              type="text"
+              name="keyword"
+              placeholder="Enter your keyword"
+            />
+            <label for="se-category"
+              ><i class="fa fa-folder-open icon-t"></i>
+            </label>
+            <select name="" id="se-category">
+              <option value="1">Cow</option>
+              <option value="2">Got</option>
+              <option value="3">Ship</option>
+              <option value="4">Cat</option>
+              <option value="5">Tiger</option>
+            </select>
+            <label for="se-location"
+              ><i class="fa fa-map-pin icon-t"></i>
+            </label>
+            <input
+              type="text"
+              name="se-location"
+              placeholder="Select location"
+            />
+            <label for="submit">
+              <i class="fa fa-search icon-t"></i>
+            </label>
+            <input id="diff-sn" type="submit" name="submit" value="Search" />
+          </form>
         </div>
-        <!-- Nav End -->
-        
-
-        <!-- top-content Start -->
-        <div class="top-content">
-            <img id="logo" src="http://chanu.themolihua.com/img/icon.png" alt="">
-            <h1>BeDirectory</h1>
-            <h4>THE BEST WORDPRESS DIRECTORY THEME EVER</h4>
-            <div class="input-form">
-                <form action="#" class="flex-form">
-                    <label for="keyword"><i class="fa fa-pen icon-t"></i></label>
-                    <input type="text" name="keyword" placeholder="Enter your keyword">
-                    <label for="se-category"><i class="fa fa-folder-open icon-t"></i>                    </label>
-                    <select name="" id="se-category">
-                        <option value="1">Cow</option>
-                        <option value="2">Got</option>
-                        <option value="3">Ship</option>
-                        <option value="4">Cat</option>
-                        <option value="5">Tiger</option>
-                    </select>                    
-                    <label for="se-location"><i class="fa fa-map-pin icon-t"></i>                    </label>
-                    <input type="text" name="se-location" placeholder="Select location">
-                    <label for="submit">          
-                        <i class="fa fa-search icon-t"></i>
-                    </label>
-                    <input id="diff-sn"  type="submit" name="submit" value="Search">
-                </form>
-            </div>
-        </div>
-        <!-- top-content End -->
-        
-        <!-- Browse categories starts -->
-        <section class="b-c">
-            <h2>Browse our categories</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-            <div class="b-c-boxes">
-                <div class="parent">
-                    <div class="child">
-                      <img class="category-img" src="img/b-c-boxes.jpg" alt="" srcset="">
-                      <h3>It Bussiness</h3>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                  </div>
-                  <div class="parent">
-                    <div class="child">
-                      <img class="category-img" src="img/b-c-boxes.jpg" alt="" srcset="">
-                      <h3>Restaurants</h3>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                  </div>
-                  <div class="parent">
-                    <div class="child">
-                      <img class="category-img" src="img/b-c-boxes.jpg" alt="" srcset="">
-                      <h3>Car Rent</h3>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                  </div>
-                  <div class="parent">
-                    <div class="child">
-                      <img class="category-img" src="img/b-c-boxes.jpg" alt="" srcset="">
-                      <h3>Travel & Hotels</h3>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                  </div>
-                  <div class="parent">
-                    <div class="child">
-                      <img class="category-img" src="img/b-c-boxes.jpg" alt="" srcset="">
-                      <h3>Music & Dance</h3>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                  </div>
-                  <div class="parent">
-                    <div class="child">
-                      <img class="category-img" src="img/b-c-boxes.jpg" alt="" srcset="">
-                      <h3>Education</h3>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                  </div>
-            </div>
-        </section>
-        <!-- Browse categories starts -->
-
-
+      </div>
+      <!-- top-content End -->
     </header>
-</body>
+
+    <!-- Browse categories starts -->
+    <section class="b-c">
+      <h2>Browse our categories</h2>
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s
+      </p>
+      <div class="b-c-boxes">
+        <div class="parent">
+          <div class="child">
+            <img
+              class="category-img"
+              src="img/b-c-boxes.jpg"
+              alt=""
+              srcset=""
+            />
+            <h3>It Bussiness</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="parent">
+          <div class="child">
+            <img
+              class="category-img"
+              src="img/b-c-boxes.jpg"
+              alt=""
+              srcset=""
+            />
+            <h3>Restaurants</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="parent">
+          <div class="child">
+            <img
+              class="category-img"
+              src="img/b-c-boxes.jpg"
+              alt=""
+              srcset=""
+            />
+            <h3>Car Rent</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="parent">
+          <div class="child">
+            <img
+              class="category-img"
+              src="img/b-c-boxes.jpg"
+              alt=""
+              srcset=""
+            />
+            <h3>Travel & Hotels</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="parent">
+          <div class="child">
+            <img
+              class="category-img"
+              src="img/b-c-boxes.jpg"
+              alt=""
+              srcset=""
+            />
+            <h3>Music & Dance</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="parent">
+          <div class="child">
+            <img
+              class="category-img"
+              src="img/b-c-boxes.jpg"
+              alt=""
+              srcset=""
+            />
+            <h3>Education</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn"><i class="fas fa-sync-alt"></i>View more</a>
+    </section>
+    <!-- Browse categories Ends -->
+
+    <!-- Featured listing directories starts -->
+    <section class="featured-listing">
+      <h2>Featured Listing Directories</h2>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+      <div class="featured-listing-boxes">
+        <div class="parent">
+          <div class="child">
+            <img
+              class="category-img"
+              src="img/b-c-boxes.jpg"
+              alt=""
+              srcset=""
+            />
+            <h3>It Bussiness</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="parent">
+          <div class="child">
+            <img
+              class="category-img"
+              src="img/b-c-boxes.jpg"
+              alt=""
+              srcset=""
+            />
+            <h3>It Bussiness</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="parent">
+          <div class="child">
+            <img
+              class="category-img"
+              src="img/b-c-boxes.jpg"
+              alt=""
+              srcset=""
+            />
+            <h3>It Bussiness</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="parent">
+          <div class="child">
+            <img
+              class="category-img"
+              src="img/b-c-boxes.jpg"
+              alt=""
+              srcset=""
+            />
+            <h3>It Bussiness</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">Previous</a>
+      <a href="#" class="btn">Next</a>
+    </section>
+    <!-- Featured listing directories Ends -->
+
+    <!-- Recent listing Starts -->
+    <section class="b-c">
+      <h2>Browse our categories</h2>
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s
+      </p>
+      <div class="b-c-boxes">
+        <div class="parent">
+          <div class="child">
+            <img
+              class="category-img"
+              src="img/b-c-boxes.jpg"
+              alt=""
+              srcset=""
+            />
+            <h3>It Bussiness</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="parent">
+          <div class="child">
+            <img
+              class="category-img"
+              src="img/b-c-boxes.jpg"
+              alt=""
+              srcset=""
+            />
+            <h3>Restaurants</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="parent">
+          <div class="child">
+            <img
+              class="category-img"
+              src="img/b-c-boxes.jpg"
+              alt=""
+              srcset=""
+            />
+            <h3>Car Rent</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="parent">
+          <div class="child">
+            <img
+              class="category-img"
+              src="img/b-c-boxes.jpg"
+              alt=""
+              srcset=""
+            />
+            <h3>Travel & Hotels</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="parent">
+          <div class="child">
+            <img
+              class="category-img"
+              src="img/b-c-boxes.jpg"
+              alt=""
+              srcset=""
+            />
+            <h3>Music & Dance</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="parent">
+          <div class="child">
+            <img
+              class="category-img"
+              src="img/b-c-boxes.jpg"
+              alt=""
+              srcset=""
+            />
+            <h3>Education</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn"><i class="fas fa-sync-alt"></i>View more</a>
+    </section>
+    <!-- Recent listing Ends -->
+
+  </body>
 </html>
