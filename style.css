@@ -298,4 +298,154 @@ p {
 .featured-listing .featured-listing-boxes .parent .child h3, .featured-listing .featured-listing-boxes .parent .child p {
   margin: auto 15px;
 }
+
+.p-f-theme {
+  background-color: #cccccc;
+  color: white;
+  height: 350px;
+  margin: 60px 0;
+}
+
+.p-f-content {
+  padding-top: 70px;
+  margin-left: 3%;
+  text-align: left;
+}
+
+.p-f-content p {
+  margin-right: 30%;
+}
+
+.p-f-content a {
+  border: 2px solid white;
+  border-radius: 4px;
+  color: white;
+  padding: 10px;
+  padding-right: 25px;
+  padding-left: 25px;
+  text-decoration: none;
+}
+
+.p-f-content a:hover {
+  color: #02bfdb;
+  background-color: white;
+  -webkit-transition-duration: 400ms;
+          transition-duration: 400ms;
+}
+
+.p-f-content .link {
+  margin-top: 30px;
+}
+
+.pricing {
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+.pricing .packages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pricing .packages .item {
+  min-width: 250px;
+  max-width: 350px;
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border: 1px solid red;
+  margin: 15px;
+  padding: 10px;
+  padding-bottom: 25px;
+  border: 3px solid #cccccc;
+  border-radius: 4px;
+}
+
+.pricing .packages .item h2 {
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.pricing .packages .item p {
+  color: #444444;
+}
+
+.pricing .packages .item .price {
+  background-color: #fafafa;
+  font-size: 40px;
+  padding: 30px;
+}
+
+.pricing .packages .item .price h3 #d-s {
+  font-size: 25px;
+  vertical-align: top;
+  color: black;
+}
+
+.pricing .packages .item .price h3 .mo {
+  font-size: 25px;
+  color: black;
+}
+
+.pricing .packages .item .features p {
+  margin: auto;
+  padding: auto;
+  line-height: 2.5;
+}
+
+.pricing .packages .item .features p .fas {
+  color: #02bfdb;
+  margin-right: 10px;
+}
+
+.pricing .packages .item:hover {
+  border: 3px solid #02bfdb;
+  -webkit-transition-duration: 400ms;
+          transition-duration: 400ms;
+  -webkit-box-shadow: -1px 7px 18px -4px rgba(0, 0, 0, 0.75);
+          box-shadow: -1px 7px 18px -4px rgba(0, 0, 0, 0.75);
+}
+
+.pricing .packages a {
+  margin-top: 20px;
+}
+
+.pricing .packages a i {
+  color: #02bfdb;
+}
+
+.pricing .packages a:hover {
+  color: white;
+}
+
+.pricing .packages a:hover i {
+  color: white;
+}
+
+.as-seen-box {
+  margin: auto;
+  background-color: #fafafa;
+  text-align: center;
+  padding-top: 80px;
+  margin-top: 60px;
+}
+
+.as-seen-box .as-seen-img {
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 0;
+}
+
+.as-seen-box .as-seen-img img {
+  margin: 15px;
+  max-width: 100%;
+}
 /*# sourceMappingURL=style.css.map */
