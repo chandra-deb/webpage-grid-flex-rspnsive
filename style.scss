@@ -145,7 +145,7 @@ p {
     max-width: 70rem;
     margin: auto;
     margin-top: 4rem;
-    border: 10px solid rgba(2, 191, 219, 0.2);
+    border: 10px solid rgba(46, 46, 46, 0.2);
     border-radius: 4px;
 
     .flex-form {
@@ -218,6 +218,7 @@ p {
         p {
           margin-top: 8px;
           margin-bottom: 20px;
+          color: #9b9a9a;
         }
       }
     }
@@ -312,12 +313,12 @@ p {
           display: flex;
           justify-content: space-between;
           .left {
-            flex: 5;
+            flex: 6;
           }
           .right {
             color: #02bfdb;
             flex: 4;
-            margin-right: 15px;
+            margin-right: 10px;
             text-align: right;
             margin-top: 12px;
             .fa-heart {
@@ -329,6 +330,135 @@ p {
         }
         p {
           color: #9b9a9a;
+          i {
+            margin-right: 9px;
+          }
+          #individual {
+            margin-left: 12px;
+          }
+        }
+        .img-box {
+          position: relative;
+          .img-box-text {
+            color: white;
+            display: inline-block;
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            img {
+              display: inline-block;
+              width: 40px;
+              vertical-align: middle;
+              margin-right: 8px;
+            }
+            * {
+              display: inline-block;
+            }
+          }
+        }
+        // h4 {
+        //   display: inline-block;
+        //   position: absolute;
+        //   bottom: 30px;
+        //   left: 15px;
+        // }
+        img {
+          width: 100%;
+        }
+        h3 {
+          margin-top: 12px;
+          margin-left: 15px;
+        }
+        p {
+          margin: 0;
+          margin-left: 15px;
+          margin-top: 8px;
+          padding-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+
+.recent-listing {
+  max-width: 1366px;
+  margin: auto;
+  margin-top: 80px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  // max-width: 1366px;
+  // background: #fafafa;
+  // border-top: 2px solid #d2d2d2;
+  // border-bottom: 2px solid #d2d2d2;
+  // margin: auto;
+  // margin-top: 70px;
+  // margin-bottom: 70px;
+  // padding-top: 70px;
+  // padding-bottom: 70px;
+  // padding-left: 15px;
+  // padding-right: 15px;
+  text-align: center;
+  .featured-listing-boxes {
+    // color: white;
+    text-align: left;
+    display: grid;
+    grid-gap: 2%;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    .parent {
+      border: 1px solid #d2d2d2;
+      border-radius: 0px;
+      position: relative;
+      .for-hover {
+        z-index: 1;
+        opacity: 0;
+        position: absolute;
+        // background-color: red;
+        bottom: 60%;
+        left: 49%;
+      }
+
+      &:hover .for-hover {
+        opacity: 1;
+        transition: 0.7s;
+      }
+      &:hover .child {
+        .img-box {
+          img {
+            opacity: 0.7;
+            z-index: 5;
+            transition: 0.5s;
+          }
+        }
+      }
+      .child {
+        background: white;
+        .g-text {
+          display: flex;
+          justify-content: space-between;
+          .left {
+            flex: 6;
+          }
+          .right {
+            color: #02bfdb;
+            flex: 4;
+            margin-right: 10px;
+            text-align: right;
+            margin-top: 12px;
+            .fa-heart {
+              display: inline-block;
+              color: #e27f82;
+              margin-left: 5px;
+            }
+          }
+        }
+        .bottom-p {
+          padding-bottom: 15px !important;
+        }
+        p {
+          color: #9b9a9a;
+          padding-bottom: 0px !important;
           i {
             margin-right: 9px;
           }
@@ -512,6 +642,7 @@ p {
         font-size: 40px;
         padding: 30px;
         h3 {
+          color: #02bfdb;
           #d-s {
             font-size: 25px;
             vertical-align: top;
@@ -580,7 +711,7 @@ p {
 }
 
 footer {
-  background: url("img/footer-bg.png");
+  background: url("img/footer-bg.png") no-repeat center center/cover;
   margin-top: 70px;
   .footer-content {
     padding: 2.3%;
@@ -589,7 +720,7 @@ footer {
     flex: 1;
     flex-wrap: wrap;
     margin: auto;
-    // justify-content: center;
+    justify-content: space-between;
     .box {
       max-width: 300px;
       // max-width: 33.333%;
