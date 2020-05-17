@@ -274,8 +274,29 @@ p {
   color: #9b9a9a;
 }
 
-.b-c .b-c-boxes img {
+.b-c .b-c-boxes .image {
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.b-c .b-c-boxes .image img {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   max-width: 100%;
+}
+
+.b-c .b-c-boxes .image:hover {
+  background: rgba(0, 0, 0, 0.75);
+  overflow: hidden;
+}
+
+.b-c .b-c-boxes .image:hover img {
+  opacity: 0.3;
+  -webkit-transform: rotate(10deg) scale(1.3);
+          transform: rotate(10deg) scale(1.3);
+  overflow: hidden;
 }
 
 .featured-listing {
