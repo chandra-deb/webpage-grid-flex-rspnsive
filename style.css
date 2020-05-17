@@ -708,6 +708,8 @@ p {
   transition: 0.4s;
   -webkit-transform: scale(0.95);
           transform: scale(0.95);
+  padding-right: 0px;
+  padding-left: 0px;
 }
 
 .pricing .packages .item h2 {
@@ -723,6 +725,7 @@ p {
   background-color: #fafafa;
   font-size: 40px;
   padding: 30px;
+  margin-bottom: 30px;
 }
 
 .pricing .packages .item .price h3 {

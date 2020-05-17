@@ -703,6 +703,8 @@ p {
       border-radius: 4px;
       transition: 0.4s;
       transform: scale(0.95);
+      padding-right: 0px;
+      padding-left: 0px;
       h2 {
         margin-top: 30px;
         margin-bottom: 0;
@@ -714,6 +716,7 @@ p {
         background-color: #fafafa;
         font-size: 40px;
         padding: 30px;
+        margin-bottom: 30px;
         h3 {
           color: #02bfdb;
           #d-s {
