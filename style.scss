@@ -240,7 +240,7 @@ p {
       }
       &:hover {
         background: rgba(0, 0, 0, 0.75);
-        overflow: hidden;
+        // overflow: hidden;
 
         .m-icon {
           opacity: 1;
@@ -249,7 +249,7 @@ p {
         .category-img {
           opacity: 0.2;
           transform: rotate(10deg) scale(1.3);
-          overflow: hidden;
+          // overflow: hidden;
         }
       }
     }
@@ -313,28 +313,15 @@ p {
       border: 1px solid #d2d2d2;
       border-radius: 0px;
       position: relative;
-      .for-hover {
-        z-index: 1;
-        opacity: 0;
-        position: absolute;
-        // background-color: red;
-        bottom: 60%;
-        left: 49%;
-      }
-
-      &:hover .for-hover {
-        opacity: 1;
-        transition: 0.7s;
-      }
-      &:hover .child {
-        .img-box {
-          img {
-            opacity: 0.7;
-            z-index: 5;
-            transition: 0.5s;
-          }
-        }
-      }
+      transition: all 0.5s;
+      // .for-hover {
+      //   z-index: 1;
+      //   opacity: 0;
+      //   position: absolute;
+      //   // background-color: red;
+      //   bottom: 60%;
+      //   left: 49%;
+      // }
       .child {
         background: white;
         .g-text {
@@ -366,6 +353,24 @@ p {
           }
         }
         .img-box {
+          .image {
+            overflow: hidden;
+            transition: 0.5s;
+            .fa-search {
+              font-size: 28px;
+              position: absolute;
+              left: 48%;
+              top: 45%;
+              color: white;
+              opacity: 0;
+              transition: 0.4s;
+              transform: scale(0.1) rotate(-100deg);
+            }
+            .category-img {
+              transition: 0.4s;
+            }
+          }
+
           position: relative;
           .img-box-text {
             color: white;
@@ -384,12 +389,6 @@ p {
             }
           }
         }
-        // h4 {
-        //   display: inline-block;
-        //   position: absolute;
-        //   bottom: 30px;
-        //   left: 15px;
-        // }
         img {
           width: 100%;
         }
@@ -404,10 +403,29 @@ p {
           padding-bottom: 20px;
         }
       }
+
+      &:hover {
+        .child {
+          .img-box {
+            .image {
+              background: rgba(0, 0, 0, 0.75);
+              .fa-search {
+                opacity: 1;
+                transform: scale(1) rotate(10deg);
+              }
+              .category-img {
+                opacity: 0.2;
+                transform: scale(1.2);
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
 
+// .recent-listing starts
 .recent-listing {
   max-width: 1366px;
   margin: auto;
