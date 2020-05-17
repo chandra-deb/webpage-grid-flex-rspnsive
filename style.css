@@ -692,7 +692,7 @@ p {
 }
 
 .pricing .packages .item {
-  min-width: 320px;
+  min-width: 255px;
   max-width: 350px;
   text-align: center;
   -webkit-box-flex: 1;
